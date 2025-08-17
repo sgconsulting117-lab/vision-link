@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 60% 99%; /* Almost white with a blueish tint */
+    --foreground: 240 10% 3.9%; /* Dark blue */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 4%; /* Dark almost black for sidebar */
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    --primary: 240 10% 4%; /* Dark almost black for active sidebar item */
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 220 14.3% 95.9%; /* Lighter gray */
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 240 5% 65%; /* Gray for sidebar icons */
+    
+    --accent: 262.1 83.3% 57.8%; /* Purple (not in design, but good to have) */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 240 10% 3.9%;
+    --radius: 1rem;
+
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 262.1 83.3% 57.8%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 262.1 83.3% 57.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
